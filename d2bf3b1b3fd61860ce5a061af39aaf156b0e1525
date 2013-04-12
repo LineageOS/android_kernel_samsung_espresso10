@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//780\u003d",
+        "filename": "arch/arm/configs/cyanogenmod_p3100_defconfig",
+        "patchSetId": 4
+      },
+      "lineNbr": 2329,
+      "author": {
+        "id": 5728
+      },
+      "writtenOn": "2013-04-12T19:11:26Z",
+      "side": 1,
+      "message": "To fix wrong orientation touchscreen in touch based recovery (CWM Touch, TWRP, and PhilZ Touch) and boot animation graphic glitch on P31xx:\n\n1. Change pivot value in board-espresso-input.c to false, the touchscreen driver mms136 will start in landscape mode\n\n2. Change ro.sf.hwrotation value in system.prop to 0 in order to make stagefright orientation correct, the boot animation will start in landscape mode without graphic glitch\n\n3. Change CONFIG_INPUT_YAS_ACCELEROMETER_POSITION to 7 in cyanogenmod_p31xx_defconfig to fix accelerometer sensor orientation\n\n4. Reuse P5100 camera vendor blob to fix camera application orientation\n\nKnown issue: wrong orientation compass",
+      "revId": "d2bf3b1b3fd61860ce5a061af39aaf156b0e1525",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//79A\u003d",
+        "filename": "arch/arm/mach-omap2/board-espresso-input.c",
+        "patchSetId": 4
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 5728
+      },
+      "writtenOn": "2013-04-12T19:11:26Z",
+      "side": 1,
+      "message": "To fix wrong orientation touchscreen in touch based recovery (CWM Touch, TWRP, and PhilZ Touch) and boot animation graphic glitch on P31xx:\n\n1. Change pivot value in board-espresso-input.c to false, the touchscreen driver mms136 will start in landscape mode\n\n2. Change ro.sf.hwrotation value in system.prop to 0 in order to make stagefright orientation correct, the boot animation will start in landscape mode without graphic glitch\n\n3. Change CONFIG_INPUT_YAS_ACCELEROMETER_POSITION to 7 in cyanogenmod_p31xx_defconfig to fix accelerometer sensor orientation\n\n4. Reuse P5100 camera vendor blob to fix camera application orientation\n\nKnown issue: wrong orientation compass",
+      "revId": "d2bf3b1b3fd61860ce5a061af39aaf156b0e1525",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
