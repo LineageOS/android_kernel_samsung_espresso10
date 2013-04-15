@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//6bY\u003d",
+        "filename": "drivers/input/touchscreen/mms136.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 1117,
+      "author": {
+        "id": 5728
+      },
+      "writtenOn": "2013-04-15T19:00:48Z",
+      "side": 1,
+      "message": "if (ts-\u003eplatform_data-\u003epivot !\u003d pivot) {\n\tswap(ts-\u003eplatform_data-\u003ex_pixel_size,\n\t\tts-\u003eplatform_data-\u003ey_pixel_size);\n\tinput_set_abs_params(ts-\u003einput_dev, ABS_MT_POSITION_X, 0,\n\t\tts-\u003eplatform_data-\u003ex_pixel_size, 0, 0);\n\tinput_set_abs_params(ts-\u003einput_dev, ABS_MT_POSITION_Y, 0,\n\t\tts-\u003eplatform_data-\u003ey_pixel_size, 0, 0);",
+      "revId": "c806b3f082045b7557f469d554da4233c254149a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//6bc\u003d",
+        "filename": "drivers/input/touchscreen/mms136.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 1118,
+      "author": {
+        "id": 5728
+      },
+      "writtenOn": "2013-04-15T19:00:48Z",
+      "side": 1,
+      "message": "}",
+      "revId": "c806b3f082045b7557f469d554da4233c254149a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
